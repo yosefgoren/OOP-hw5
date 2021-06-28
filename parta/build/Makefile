@@ -221,6 +221,19 @@ NightlyTest/fast:
 .PHONY : NightlyTest/fast
 
 #=============================================================================
+# Target rules for targets named test_parta
+
+# Build rule for target.
+test_parta: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test_parta
+.PHONY : test_parta
+
+# fast build rule for target.
+test_parta/fast:
+	$(MAKE) -f CMakeFiles\test_parta.dir\build.make CMakeFiles/test_parta.dir/build
+.PHONY : test_parta/fast
+
+#=============================================================================
 # Target rules for targets named NightlyStart
 
 # Build rule for target.
@@ -519,46 +532,6 @@ ContinuousMemCheck/fast:
 	$(MAKE) -f CMakeFiles\ContinuousMemCheck.dir\build.make CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
-#=============================================================================
-# Target rules for targets named free
-
-# Build rule for target.
-free: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 free
-.PHONY : free
-
-# fast build rule for target.
-free/fast:
-	$(MAKE) -f CMakeFiles\free.dir\build.make CMakeFiles/free.dir/build
-.PHONY : free/fast
-
-free.obj: free.cpp.obj
-
-.PHONY : free.obj
-
-# target to build an object file
-free.cpp.obj:
-	$(MAKE) -f CMakeFiles\free.dir\build.make CMakeFiles/free.dir/free.cpp.obj
-.PHONY : free.cpp.obj
-
-free.i: free.cpp.i
-
-.PHONY : free.i
-
-# target to preprocess a source file
-free.cpp.i:
-	$(MAKE) -f CMakeFiles\free.dir\build.make CMakeFiles/free.dir/free.cpp.i
-.PHONY : free.cpp.i
-
-free.s: free.cpp.s
-
-.PHONY : free.s
-
-# target to generate assembly for a file
-free.cpp.s:
-	$(MAKE) -f CMakeFiles\free.dir\build.make CMakeFiles/free.dir/free.cpp.s
-.PHONY : free.cpp.s
-
 part1_test.obj: part1_test.cpp.obj
 
 .PHONY : part1_test.obj
@@ -586,6 +559,33 @@ part1_test.cpp.s:
 	$(MAKE) -f CMakeFiles\given_test.dir\build.make CMakeFiles/given_test.dir/part1_test.cpp.s
 .PHONY : part1_test.cpp.s
 
+test_parta.obj: test_parta.cpp.obj
+
+.PHONY : test_parta.obj
+
+# target to build an object file
+test_parta.cpp.obj:
+	$(MAKE) -f CMakeFiles\test_parta.dir\build.make CMakeFiles/test_parta.dir/test_parta.cpp.obj
+.PHONY : test_parta.cpp.obj
+
+test_parta.i: test_parta.cpp.i
+
+.PHONY : test_parta.i
+
+# target to preprocess a source file
+test_parta.cpp.i:
+	$(MAKE) -f CMakeFiles\test_parta.dir\build.make CMakeFiles/test_parta.dir/test_parta.cpp.i
+.PHONY : test_parta.cpp.i
+
+test_parta.s: test_parta.cpp.s
+
+.PHONY : test_parta.s
+
+# target to generate assembly for a file
+test_parta.cpp.s:
+	$(MAKE) -f CMakeFiles\test_parta.dir\build.make CMakeFiles/test_parta.dir/test_parta.cpp.s
+.PHONY : test_parta.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -598,6 +598,7 @@ help:
 	@echo ... ContinuousSubmit
 	@echo ... ContinuousConfigure
 	@echo ... NightlyTest
+	@echo ... test_parta
 	@echo ... NightlyStart
 	@echo ... NightlyBuild
 	@echo ... NightlySubmit
@@ -623,16 +624,15 @@ help:
 	@echo ... ContinuousUpdate
 	@echo ... ContinuousCoverage
 	@echo ... ContinuousMemCheck
-	@echo ... free
 	@echo ... test
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... free.obj
-	@echo ... free.i
-	@echo ... free.s
 	@echo ... part1_test.obj
 	@echo ... part1_test.i
 	@echo ... part1_test.s
+	@echo ... test_parta.obj
+	@echo ... test_parta.i
+	@echo ... test_parta.s
 .PHONY : help
 
 

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "free.exe"
+			"path" : "test_parta.exe"
 		},
 		{
-			"path" : "free.pdb"
+			"path" : "test_parta.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -48,7 +48,7 @@
 			]
 		}
 	],
-	"id" : "free::@6890427a1f51a3e7e1df",
+	"id" : "test_parta::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -64,8 +64,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "free",
-	"nameOnDisk" : "free.exe",
+	"name" : "test_parta",
+	"nameOnDisk" : "test_parta.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -86,7 +86,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "free.cpp",
+			"path" : "test_parta.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

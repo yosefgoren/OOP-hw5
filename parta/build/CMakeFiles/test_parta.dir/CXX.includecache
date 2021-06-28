@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/lisp.h
+
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/test_parta.cpp
+iostream
+-
+lisp.h
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/lisp.h
+

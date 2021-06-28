@@ -5,7 +5,7 @@ include(CTest)
 enable_testing()
 
 add_executable(given_test part1_test.cpp)
-add_executable(free free.cpp)
+add_executable(test_parta test_parta.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

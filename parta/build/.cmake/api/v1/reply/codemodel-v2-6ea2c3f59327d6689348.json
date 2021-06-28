@@ -291,16 +291,16 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "free::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-free-Debug-37774b610a22a68aedf7.json",
-					"name" : "free",
+					"id" : "given_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-given_test-Debug-21c553744a4f3f941c56.json",
+					"name" : "given_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "given_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-given_test-Debug-21c553744a4f3f941c56.json",
-					"name" : "given_test",
+					"id" : "test_parta::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_parta-Debug-0657184d4938da983747.json",
+					"name" : "test_parta",
 					"projectIndex" : 0
 				}
 			]

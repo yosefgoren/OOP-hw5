@@ -102,7 +102,7 @@ clean: CMakeFiles/NightlyMemoryCheck.dir/clean
 CMakeFiles/given_test.dir/all:
 	$(MAKE) -f CMakeFiles\given_test.dir\build.make CMakeFiles/given_test.dir/depend
 	$(MAKE) -f CMakeFiles\given_test.dir\build.make CMakeFiles/given_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\pc\Desktop\S4\courses\236703_OOP\hw5\parta\build\CMakeFiles --progress-num=3,4 "Built target given_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\pc\Desktop\S4\courses\236703_OOP\hw5\parta\build\CMakeFiles --progress-num=1,2 "Built target given_test"
 .PHONY : CMakeFiles/given_test.dir/all
 
 # Include target in all.
@@ -257,6 +257,43 @@ CMakeFiles/NightlyTest.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/NightlyTest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_parta.dir
+
+# All Build rule for target.
+CMakeFiles/test_parta.dir/all:
+	$(MAKE) -f CMakeFiles\test_parta.dir\build.make CMakeFiles/test_parta.dir/depend
+	$(MAKE) -f CMakeFiles\test_parta.dir\build.make CMakeFiles/test_parta.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\pc\Desktop\S4\courses\236703_OOP\hw5\parta\build\CMakeFiles --progress-num=3,4 "Built target test_parta"
+.PHONY : CMakeFiles/test_parta.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_parta.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_parta.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pc\Desktop\S4\courses\236703_OOP\hw5\parta\build\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/test_parta.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pc\Desktop\S4\courses\236703_OOP\hw5\parta\build\CMakeFiles 0
+.PHONY : CMakeFiles/test_parta.dir/rule
+
+# Convenience name for target.
+test_parta: CMakeFiles/test_parta.dir/rule
+
+.PHONY : test_parta
+
+# clean rule for target.
+CMakeFiles/test_parta.dir/clean:
+	$(MAKE) -f CMakeFiles\test_parta.dir\build.make CMakeFiles/test_parta.dir/clean
+.PHONY : CMakeFiles/test_parta.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_parta.dir/clean
 
 .PHONY : clean
 
@@ -993,43 +1030,6 @@ CMakeFiles/ContinuousMemCheck.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/free.dir
-
-# All Build rule for target.
-CMakeFiles/free.dir/all:
-	$(MAKE) -f CMakeFiles\free.dir\build.make CMakeFiles/free.dir/depend
-	$(MAKE) -f CMakeFiles\free.dir\build.make CMakeFiles/free.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\pc\Desktop\S4\courses\236703_OOP\hw5\parta\build\CMakeFiles --progress-num=1,2 "Built target free"
-.PHONY : CMakeFiles/free.dir/all
-
-# Include target in all.
-all: CMakeFiles/free.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/free.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pc\Desktop\S4\courses\236703_OOP\hw5\parta\build\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/free.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\pc\Desktop\S4\courses\236703_OOP\hw5\parta\build\CMakeFiles 0
-.PHONY : CMakeFiles/free.dir/rule
-
-# Convenience name for target.
-free: CMakeFiles/free.dir/rule
-
-.PHONY : free
-
-# clean rule for target.
-CMakeFiles/free.dir/clean:
-	$(MAKE) -f CMakeFiles\free.dir\build.make CMakeFiles/free.dir/clean
-.PHONY : CMakeFiles/free.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/free.dir/clean
 
 .PHONY : clean
 

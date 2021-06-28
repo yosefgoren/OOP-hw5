@@ -3,11 +3,6 @@
 
 using namespace std;
 
-// #define Check(exp,num) cout << \
-//     (exp::value == num ?\
-//     "PASSED\n" :\
-//     "FAIL in expression: \n" + #exp + "\n expected to be " + atoi(num) + "\n"); 
-
 bool passed_all = true;
 unsigned checks_done = 0;
 
@@ -54,13 +49,22 @@ int main(){
             RPAR,
             Int<1>
         >::value, 25);    
-    
     //check number 12:
     check(Eval<FACT, LPAR, MINUS, LPAR, Int<5>, RPAR, LPAR, Int<2>, RPAR, RPAR>::value, 6);
     check(Eval<EQ, PLUS, Int<88>, Int<12>, Int<100>>::value, 1);
     check(Eval<LPAR, EQ, PLUS, LPAR, Int<88>, RPAR, Int<12>, MUL, Int<10>, Int<10>, RPAR>::value, 1);
     //check number 15:
     check(Eval<PLUS, NOT, LPAR, EQ, PLUS, LPAR, Int<88>, RPAR, Int<12>, MUL, Int<10>, Int<10>, RPAR, Int<99>>::value, 99);
+    check(Eval<DIV, Int<20>, Int<10>>::value, 2);
+    check(Eval<MUL, EQ, NOT, FACT, Int<4>, Int<0>, Int<25>>::value, 25);
+    //check number 18:
+    check(Eval<NOT, NOT, NOT, NOT, NOT, Int<0>>::value, 1);
+    check(Eval<LPAR, NOT, NOT, LPAR, NOT, NOT, LPAR, LPAR, NOT, Int<0>, RPAR, RPAR, RPAR, RPAR>::value, 1);
+    check(Eval<COND, EQ, COND, Int<1>, Int<52>, Int<39>, Int<52>, Int<13>, Int<99>>::value, 13);
+    //check number 21:
+    check(Eval<DIV, MUL, Int<9>, DIV, Int<19>, Int<2>, Int<4>>::value, 20);
+    check(Eval<EQ, DIV, MUL, Int<9>, DIV, Int<19>, Int<2>, Int<4>, Int<19>>::value, 0);
+    check(Eval<LPAR, EQ, LPAR, LPAR, Int<18>, RPAR, Int<18>, RPAR, RPAR, RPAR>::value, 1);
 
     cout << "passed all = ";
     printBool(passed_all);
