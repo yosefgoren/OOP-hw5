@@ -3,6 +3,5 @@
 
 CMakeFiles/free.dir/free.cpp.obj: ../eval.h
 CMakeFiles/free.dir/free.cpp.obj: ../free.cpp
-CMakeFiles/free.dir/free.cpp.obj: ../free.h
 CMakeFiles/free.dir/free.cpp.obj: ../lisp.h
 

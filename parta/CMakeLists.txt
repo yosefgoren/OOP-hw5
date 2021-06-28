@@ -4,7 +4,7 @@ project(lisp VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(lisp main.cpp)
+add_executable(given_test part1_test.cpp)
 add_executable(free free.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

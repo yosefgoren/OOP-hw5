@@ -1,7 +1,5 @@
-#include "free.h"
 #include <iostream>
 #include "lisp.h"
-#include "eval.h"
 
 using namespace std;
 
@@ -30,7 +28,7 @@ int main(){
     check(Eval<COND, Int<1>, Int<2>, Int<3>>::value, 2);
     check(Eval<COND, Int<0>, Int<2>, Int<3>>::value, 3);
     check(Eval<COND, EQ, Int<39>, Int<17>, PLUS, Int<10>, Int<30>, MINUS, Int<9>, Int<3>>::value, 6);
-    
+    //check number 3:
     check(Eval<Int<24>>::value, 24);
     check(Eval<COND, Int<1>, Int<24>, PLUS, Int<1>, Int<3>>::value, 24);
     check(Eval<COND, Int<1>, COND, Int<1>, Int<24>, Int<2>, PLUS, Int<1>, Int<3>>::value, 24);
@@ -59,6 +57,10 @@ int main(){
     
     //check number 12:
     check(Eval<FACT, LPAR, MINUS, LPAR, Int<5>, RPAR, LPAR, Int<2>, RPAR, RPAR>::value, 6);
+    check(Eval<EQ, PLUS, Int<88>, Int<12>, Int<100>>::value, 1);
+    check(Eval<LPAR, EQ, PLUS, LPAR, Int<88>, RPAR, Int<12>, MUL, Int<10>, Int<10>, RPAR>::value, 1);
+    //check number 15:
+    check(Eval<PLUS, NOT, LPAR, EQ, PLUS, LPAR, Int<88>, RPAR, Int<12>, MUL, Int<10>, Int<10>, RPAR, Int<99>>::value, 99);
 
     cout << "passed all = ";
     printBool(passed_all);

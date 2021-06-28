@@ -156,6 +156,19 @@ NightlyMemoryCheck/fast:
 .PHONY : NightlyMemoryCheck/fast
 
 #=============================================================================
+# Target rules for targets named given_test
+
+# Build rule for target.
+given_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 given_test
+.PHONY : given_test
+
+# fast build rule for target.
+given_test/fast:
+	$(MAKE) -f CMakeFiles\given_test.dir\build.make CMakeFiles/given_test.dir/build
+.PHONY : given_test/fast
+
+#=============================================================================
 # Target rules for targets named Experimental
 
 # Build rule for target.
@@ -507,19 +520,6 @@ ContinuousMemCheck/fast:
 .PHONY : ContinuousMemCheck/fast
 
 #=============================================================================
-# Target rules for targets named lisp
-
-# Build rule for target.
-lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 lisp
-.PHONY : lisp
-
-# fast build rule for target.
-lisp/fast:
-	$(MAKE) -f CMakeFiles\lisp.dir\build.make CMakeFiles/lisp.dir/build
-.PHONY : lisp/fast
-
-#=============================================================================
 # Target rules for targets named free
 
 # Build rule for target.
@@ -559,32 +559,32 @@ free.cpp.s:
 	$(MAKE) -f CMakeFiles\free.dir\build.make CMakeFiles/free.dir/free.cpp.s
 .PHONY : free.cpp.s
 
-main.obj: main.cpp.obj
+part1_test.obj: part1_test.cpp.obj
 
-.PHONY : main.obj
+.PHONY : part1_test.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\lisp.dir\build.make CMakeFiles/lisp.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+part1_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\given_test.dir\build.make CMakeFiles/given_test.dir/part1_test.cpp.obj
+.PHONY : part1_test.cpp.obj
 
-main.i: main.cpp.i
+part1_test.i: part1_test.cpp.i
 
-.PHONY : main.i
+.PHONY : part1_test.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\lisp.dir\build.make CMakeFiles/lisp.dir/main.cpp.i
-.PHONY : main.cpp.i
+part1_test.cpp.i:
+	$(MAKE) -f CMakeFiles\given_test.dir\build.make CMakeFiles/given_test.dir/part1_test.cpp.i
+.PHONY : part1_test.cpp.i
 
-main.s: main.cpp.s
+part1_test.s: part1_test.cpp.s
 
-.PHONY : main.s
+.PHONY : part1_test.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\lisp.dir\build.make CMakeFiles/lisp.dir/main.cpp.s
-.PHONY : main.cpp.s
+part1_test.cpp.s:
+	$(MAKE) -f CMakeFiles\given_test.dir\build.make CMakeFiles/given_test.dir/part1_test.cpp.s
+.PHONY : part1_test.cpp.s
 
 # Help Target
 help:
@@ -593,6 +593,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... NightlyMemoryCheck
+	@echo ... given_test
 	@echo ... Experimental
 	@echo ... ContinuousSubmit
 	@echo ... ContinuousConfigure
@@ -622,7 +623,6 @@ help:
 	@echo ... ContinuousUpdate
 	@echo ... ContinuousCoverage
 	@echo ... ContinuousMemCheck
-	@echo ... lisp
 	@echo ... free
 	@echo ... test
 	@echo ... edit_cache
@@ -630,9 +630,9 @@ help:
 	@echo ... free.obj
 	@echo ... free.i
 	@echo ... free.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... part1_test.obj
+	@echo ... part1_test.i
+	@echo ... part1_test.s
 .PHONY : help
 
 

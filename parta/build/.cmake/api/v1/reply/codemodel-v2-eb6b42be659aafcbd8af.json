@@ -298,9 +298,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "lisp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lisp-Debug-859a6be7ee3500f122ca.json",
-					"name" : "lisp",
+					"id" : "given_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-given_test-Debug-21c553744a4f3f941c56.json",
+					"name" : "given_test",
 					"projectIndex" : 0
 				}
 			]

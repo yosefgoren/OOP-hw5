@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lisp.exe"
+			"path" : "given_test.exe"
 		},
 		{
-			"path" : "lisp.pdb"
+			"path" : "given_test.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -48,7 +48,7 @@
 			]
 		}
 	],
-	"id" : "lisp::@6890427a1f51a3e7e1df",
+	"id" : "given_test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -64,8 +64,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "lisp",
-	"nameOnDisk" : "lisp.exe",
+	"name" : "given_test",
+	"nameOnDisk" : "given_test.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -86,7 +86,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "part1_test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

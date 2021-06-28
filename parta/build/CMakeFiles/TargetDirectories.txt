@@ -1,4 +1,5 @@
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/given_test.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/Experimental.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/ContinuousSubmit.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/ContinuousConfigure.dir
@@ -28,7 +29,6 @@ C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/package.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/ContinuousUpdate.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/ContinuousCoverage.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/ContinuousMemCheck.dir
-C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/lisp.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/free.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/test.dir
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build/CMakeFiles/edit_cache.dir
