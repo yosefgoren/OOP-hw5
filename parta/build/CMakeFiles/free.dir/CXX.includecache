@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/eval.h
+lisp.h
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/lisp.h
+
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/free.cpp
 free.h
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/free.h
 iostream
 -
+lisp.h
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/lisp.h
+eval.h
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/eval.h
 
 C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/free.h
+
+C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/lisp.h
 
