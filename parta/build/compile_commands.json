@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build",
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\lisp.dir\\main.cpp.obj -c C:\\Users\\pc\\Desktop\\S4\\courses\\236703_OOP\\hw5\\parta\\main.cpp",
+  "file": "C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/main.cpp"
+},
+{
+  "directory": "C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/build",
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\free.dir\\free.cpp.obj -c C:\\Users\\pc\\Desktop\\S4\\courses\\236703_OOP\\hw5\\parta\\free.cpp",
+  "file": "C:/Users/pc/Desktop/S4/courses/236703_OOP/hw5/parta/free.cpp"
+}
+]
